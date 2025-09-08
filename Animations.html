@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Animation</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgb(223, 201, 74);
+        }
+        .ball{
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgb(26, 208, 199), rgb(62, 71, 234));
+            border-radius: 50%;
+            position: relative;
+            animation: bounce 2s infinite ease-in-out;
+        }
+        @keyframes bounce{
+            0%,
+            100%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>    
+</body>
+</html>
